@@ -29,6 +29,7 @@ namespace WhoWantsToBeAMillionaire
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnAnswerA = new System.Windows.Forms.Button();
             this.btnAnswerC = new System.Windows.Forms.Button();
             this.btnAnswerB = new System.Windows.Forms.Button();
@@ -155,6 +156,7 @@ namespace WhoWantsToBeAMillionaire
             this.Controls.Add(this.btnAnswerB);
             this.Controls.Add(this.btnAnswerC);
             this.Controls.Add(this.btnAnswerA);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Who wants to be a millionaire";
             this.Load += new System.EventHandler(this.Form1_Load);
