@@ -29,13 +29,152 @@ namespace WhoWantsToBeAMillionaire
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.tbQuestion = new System.Windows.Forms.TextBox();
+            this.tbMoney = new System.Windows.Forms.TextBox();
+            this.btnAnswerA = new System.Windows.Forms.Button();
+            this.btnAnswerC = new System.Windows.Forms.Button();
+            this.btnAnswerB = new System.Windows.Forms.Button();
+            this.btnAnswerD = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // tbQuestion
+            // 
+            this.tbQuestion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbQuestion.BackColor = System.Drawing.Color.Black;
+            this.tbQuestion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbQuestion.ForeColor = System.Drawing.Color.White;
+            this.tbQuestion.Location = new System.Drawing.Point(12, 76);
+            this.tbQuestion.Multiline = true;
+            this.tbQuestion.Name = "tbQuestion";
+            this.tbQuestion.ReadOnly = true;
+            this.tbQuestion.Size = new System.Drawing.Size(560, 195);
+            this.tbQuestion.TabIndex = 4;
+            this.tbQuestion.Text = "Question";
+            this.tbQuestion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tbMoney
+            // 
+            this.tbMoney.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbMoney.BackColor = System.Drawing.Color.Black;
+            this.tbMoney.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbMoney.Enabled = false;
+            this.tbMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbMoney.ForeColor = System.Drawing.Color.White;
+            this.tbMoney.Location = new System.Drawing.Point(12, 12);
+            this.tbMoney.Name = "tbMoney";
+            this.tbMoney.Size = new System.Drawing.Size(560, 22);
+            this.tbMoney.TabIndex = 5;
+            this.tbMoney.Text = "Points: 0";
+            this.tbMoney.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnAnswerA
+            // 
+            this.btnAnswerA.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnAnswerA.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnAnswerA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnswerA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnswerA.ForeColor = System.Drawing.Color.White;
+            this.btnAnswerA.Location = new System.Drawing.Point(12, 277);
+            this.btnAnswerA.Name = "btnAnswerA";
+            this.btnAnswerA.Size = new System.Drawing.Size(277, 81);
+            this.btnAnswerA.TabIndex = 0;
+            this.btnAnswerA.Text = "A";
+            this.btnAnswerA.UseVisualStyleBackColor = true;
+            this.btnAnswerA.Click += new System.EventHandler(this.btnAnswer_Click);
+            // 
+            // btnAnswerC
+            // 
+            this.btnAnswerC.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnAnswerC.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnAnswerC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnswerC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnswerC.ForeColor = System.Drawing.Color.White;
+            this.btnAnswerC.Location = new System.Drawing.Point(12, 364);
+            this.btnAnswerC.Name = "btnAnswerC";
+            this.btnAnswerC.Size = new System.Drawing.Size(277, 81);
+            this.btnAnswerC.TabIndex = 1;
+            this.btnAnswerC.Text = "C";
+            this.btnAnswerC.UseVisualStyleBackColor = true;
+            this.btnAnswerC.Click += new System.EventHandler(this.btnAnswer_Click);
+            // 
+            // btnAnswerB
+            // 
+            this.btnAnswerB.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnAnswerB.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnAnswerB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnswerB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnswerB.ForeColor = System.Drawing.Color.White;
+            this.btnAnswerB.Location = new System.Drawing.Point(295, 277);
+            this.btnAnswerB.Name = "btnAnswerB";
+            this.btnAnswerB.Size = new System.Drawing.Size(277, 81);
+            this.btnAnswerB.TabIndex = 2;
+            this.btnAnswerB.Text = "B";
+            this.btnAnswerB.UseVisualStyleBackColor = true;
+            this.btnAnswerB.Click += new System.EventHandler(this.btnAnswer_Click);
+            // 
+            // btnAnswerD
+            // 
+            this.btnAnswerD.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnAnswerD.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnAnswerD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnswerD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnswerD.ForeColor = System.Drawing.Color.White;
+            this.btnAnswerD.Location = new System.Drawing.Point(295, 364);
+            this.btnAnswerD.Name = "btnAnswerD";
+            this.btnAnswerD.Size = new System.Drawing.Size(277, 81);
+            this.btnAnswerD.TabIndex = 3;
+            this.btnAnswerD.Text = "D";
+            this.btnAnswerD.UseVisualStyleBackColor = true;
+            this.btnAnswerD.Click += new System.EventHandler(this.btnAnswer_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackgroundImage = global::WhoWantsToBeAMillionaire.Properties.Resources.scoreboard;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(578, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(303, 433);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(893, 455);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.tbMoney);
+            this.Controls.Add(this.tbQuestion);
+            this.Controls.Add(this.btnAnswerD);
+            this.Controls.Add(this.btnAnswerB);
+            this.Controls.Add(this.btnAnswerC);
+            this.Controls.Add(this.btnAnswerA);
+            this.Name = "Form1";
+            this.Text = "Who wants to be a millionaire";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+        private System.Windows.Forms.TextBox tbQuestion;
+        private System.Windows.Forms.TextBox tbMoney;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnAnswerA;
+        private System.Windows.Forms.Button btnAnswerC;
+        private System.Windows.Forms.Button btnAnswerB;
+        private System.Windows.Forms.Button btnAnswerD;
     }
 }
 
