@@ -29,12 +29,12 @@ namespace WhoWantsToBeAMillionaire
             Button button = (Button)sender;
 
             string guess = "";
-            if (button.Name.EndsWith("A")) guess = currentQuestion.AnswerA; 
-            if (button.Name.EndsWith("B")) guess = currentQuestion.AnswerB;
-            if (button.Name.EndsWith("C")) guess = currentQuestion.AnswerC;
-            if (button.Name.EndsWith("D")) guess = currentQuestion.AnswerD;
+            if (button.Name.EndsWith("A")) guess = currentQuestion.AnswerA.ToLower(); 
+            if (button.Name.EndsWith("B")) guess = currentQuestion.AnswerB.ToLower();
+            if (button.Name.EndsWith("C")) guess = currentQuestion.AnswerC.ToLower();
+            if (button.Name.EndsWith("D")) guess = currentQuestion.AnswerD.ToLower();
 
-            if (guess != currentQuestion.CorrectAnswer)
+            if (guess != currentQuestion.CorrectAnswer.ToLower())
             {
                 points = 0;
             }
@@ -50,7 +50,7 @@ namespace WhoWantsToBeAMillionaire
             }
             else
             {
-                lblPoints.Text = "Points: " + points;
+                lblPoints.Text = "Points: " + points.ToString();
                 pickNewQuestion();
             }
         }
@@ -82,8 +82,9 @@ namespace WhoWantsToBeAMillionaire
 
         void FinishGame()
         {
-            lblPoints.Text = "You won $1,000,000";
+            lblPoints.Text = "Congratulations";
             ShowQuestion(new RoundQuestion("", "", "", "", "", ""));
+            lblQuestion.Text = "You won $1,000,000";
         }
     }
 
