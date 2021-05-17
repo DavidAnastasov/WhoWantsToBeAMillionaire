@@ -64,7 +64,7 @@ namespace WhoWantsToBeAMillionaire
             this.btnAnswerC.Location = new System.Drawing.Point(12, 364);
             this.btnAnswerC.Name = "btnAnswerC";
             this.btnAnswerC.Size = new System.Drawing.Size(277, 81);
-            this.btnAnswerC.TabIndex = 1;
+            this.btnAnswerC.TabIndex = 2;
             this.btnAnswerC.Text = "C";
             this.btnAnswerC.UseVisualStyleBackColor = true;
             this.btnAnswerC.Click += new System.EventHandler(this.btnAnswer_Click);
@@ -79,7 +79,7 @@ namespace WhoWantsToBeAMillionaire
             this.btnAnswerB.Location = new System.Drawing.Point(295, 277);
             this.btnAnswerB.Name = "btnAnswerB";
             this.btnAnswerB.Size = new System.Drawing.Size(277, 81);
-            this.btnAnswerB.TabIndex = 2;
+            this.btnAnswerB.TabIndex = 1;
             this.btnAnswerB.Text = "B";
             this.btnAnswerB.UseVisualStyleBackColor = true;
             this.btnAnswerB.Click += new System.EventHandler(this.btnAnswer_Click);
