@@ -74,10 +74,10 @@ namespace WhoWantsToBeAMillionaire
         void ShowQuestion (RoundQuestion quiz)
         {
             lblQuestion.Text = quiz.Question;
-            btnAnswerA.Text = quiz.AnswerA;
-            btnAnswerB.Text = quiz.AnswerB;
-            btnAnswerC.Text = quiz.AnswerC;
-            btnAnswerD.Text = quiz.AnswerD;
+            btnAnswerA.Text = quiz.AnswerA != "" ? ("A) " + quiz.AnswerA) : "";
+            btnAnswerB.Text = quiz.AnswerB != "" ? ("B) " + quiz.AnswerB) : "";
+            btnAnswerC.Text = quiz.AnswerC != "" ? ("C) " + quiz.AnswerC) : "";
+            btnAnswerD.Text = quiz.AnswerD != "" ? ("D) " + quiz.AnswerD) : "";
         }
 
         void FinishGame()
