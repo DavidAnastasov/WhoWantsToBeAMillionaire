@@ -50,7 +50,7 @@ namespace WhoWantsToBeAMillionaire
             }
             else
             {
-                tbMoney.Text = "Points: " + points;
+                lblPoints.Text = "Points: " + points;
                 pickNewQuestion();
             }
         }
@@ -73,7 +73,7 @@ namespace WhoWantsToBeAMillionaire
 
         void ShowQuestion (RoundQuestion quiz)
         {
-            tbQuestion.Text = quiz.Question;
+            lblQuestion.Text = quiz.Question;
             btnAnswerA.Text = quiz.AnswerA;
             btnAnswerB.Text = quiz.AnswerB;
             btnAnswerC.Text = quiz.AnswerC;
@@ -82,7 +82,7 @@ namespace WhoWantsToBeAMillionaire
 
         void FinishGame()
         {
-            tbMoney.Text = "You won $1,000,000";
+            lblPoints.Text = "You won $1,000,000";
             ShowQuestion(new RoundQuestion("", "", "", "", "", ""));
         }
     }

@@ -29,49 +29,15 @@ namespace WhoWantsToBeAMillionaire
         /// </summary>
         private void InitializeComponent()
         {
-            this.tbQuestion = new System.Windows.Forms.TextBox();
-            this.tbMoney = new System.Windows.Forms.TextBox();
             this.btnAnswerA = new System.Windows.Forms.Button();
             this.btnAnswerC = new System.Windows.Forms.Button();
             this.btnAnswerB = new System.Windows.Forms.Button();
             this.btnAnswerD = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblQuestion = new System.Windows.Forms.Label();
+            this.lblPoints = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tbQuestion
-            // 
-            this.tbQuestion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbQuestion.BackColor = System.Drawing.Color.Black;
-            this.tbQuestion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbQuestion.ForeColor = System.Drawing.Color.White;
-            this.tbQuestion.Location = new System.Drawing.Point(12, 76);
-            this.tbQuestion.Multiline = true;
-            this.tbQuestion.Name = "tbQuestion";
-            this.tbQuestion.ReadOnly = true;
-            this.tbQuestion.Size = new System.Drawing.Size(560, 195);
-            this.tbQuestion.TabIndex = 4;
-            this.tbQuestion.Text = "Question";
-            this.tbQuestion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // tbMoney
-            // 
-            this.tbMoney.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbMoney.BackColor = System.Drawing.Color.Black;
-            this.tbMoney.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbMoney.Enabled = false;
-            this.tbMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbMoney.ForeColor = System.Drawing.Color.White;
-            this.tbMoney.Location = new System.Drawing.Point(12, 12);
-            this.tbMoney.Name = "tbMoney";
-            this.tbMoney.Size = new System.Drawing.Size(560, 22);
-            this.tbMoney.TabIndex = 5;
-            this.tbMoney.Text = "Points: 0";
-            this.tbMoney.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnAnswerA
             // 
@@ -145,15 +111,46 @@ namespace WhoWantsToBeAMillionaire
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // lblQuestion
+            // 
+            this.lblQuestion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblQuestion.BackColor = System.Drawing.Color.Transparent;
+            this.lblQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuestion.ForeColor = System.Drawing.Color.White;
+            this.lblQuestion.Location = new System.Drawing.Point(12, 76);
+            this.lblQuestion.Margin = new System.Windows.Forms.Padding(3);
+            this.lblQuestion.Name = "lblQuestion";
+            this.lblQuestion.Size = new System.Drawing.Size(560, 195);
+            this.lblQuestion.TabIndex = 8;
+            this.lblQuestion.Text = "Question";
+            this.lblQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblPoints
+            // 
+            this.lblPoints.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPoints.BackColor = System.Drawing.Color.Transparent;
+            this.lblPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPoints.ForeColor = System.Drawing.Color.White;
+            this.lblPoints.Location = new System.Drawing.Point(12, 12);
+            this.lblPoints.Margin = new System.Windows.Forms.Padding(3);
+            this.lblPoints.Name = "lblPoints";
+            this.lblPoints.Size = new System.Drawing.Size(560, 22);
+            this.lblPoints.TabIndex = 9;
+            this.lblPoints.Text = "Points: 0";
+            this.lblPoints.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(893, 455);
+            this.Controls.Add(this.lblPoints);
+            this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.tbMoney);
-            this.Controls.Add(this.tbQuestion);
             this.Controls.Add(this.btnAnswerD);
             this.Controls.Add(this.btnAnswerB);
             this.Controls.Add(this.btnAnswerC);
@@ -163,18 +160,17 @@ namespace WhoWantsToBeAMillionaire
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox tbQuestion;
-        private System.Windows.Forms.TextBox tbMoney;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnAnswerA;
         private System.Windows.Forms.Button btnAnswerC;
         private System.Windows.Forms.Button btnAnswerB;
         private System.Windows.Forms.Button btnAnswerD;
+        private System.Windows.Forms.Label lblQuestion;
+        private System.Windows.Forms.Label lblPoints;
     }
 }
 
