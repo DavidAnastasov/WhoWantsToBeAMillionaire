@@ -137,10 +137,10 @@ namespace WhoWantsToBeAMillionaire
             this.lblPoints.Location = new System.Drawing.Point(12, 12);
             this.lblPoints.Margin = new System.Windows.Forms.Padding(3);
             this.lblPoints.Name = "lblPoints";
-            this.lblPoints.Size = new System.Drawing.Size(560, 22);
+            this.lblPoints.Size = new System.Drawing.Size(560, 32);
             this.lblPoints.TabIndex = 9;
             this.lblPoints.Text = "Points: 0";
-            this.lblPoints.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPoints.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Form1
             // 
